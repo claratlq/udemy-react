@@ -7,9 +7,9 @@ import "./SideNavBar.css";
 import { IconContext } from "react-icons";
 
 function Navbar() {
-  const [sidebar, setSidebar] = useState(false);
+  const [sidebar, setSidebar] = useState(true);
 
-  const showSidebar = () => setSidebar(!sidebar);
+  const showSidebar = () => setSidebar(sidebar);
 
   return (
       <IconContext.Provider value={{ color: "undefined" }}>
